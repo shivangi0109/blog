@@ -21,7 +21,7 @@ app.post('/posts', (req, res) => {
     title
   };
 
-  res.status(201).send(`Post with this id - ${posts[id]} has been created`);
+  res.status(201).send(posts[id]);
 });
 
 app.get('/', (req, res) => {
