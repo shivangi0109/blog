@@ -1,4 +1,4 @@
-const PORT = 8080;
+const PORT = 4000;
 const express = require("express");
 const bodyParser = require("body-parser");
 const { randomBytes } = require("crypto");
@@ -25,7 +25,7 @@ app.post('/posts', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the back end! 😃');
+  res.send('Welcome to the posts back end! 😃');
 });
 
 app.listen(PORT, () => {
